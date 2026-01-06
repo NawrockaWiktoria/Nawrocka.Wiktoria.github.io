@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"><script>/* <![CDATA[ */ ringDataLayer = {"context":{"variant":{"accelerator":"ZG93bmxvYWQucG9jenRhLm9uZXQucGw6Oms4cw=="},"id":{"website":"9481b0b7-7c3d-463b-8f3c-9de5c8289e21"}}}; /* ]]> */</script><script>/* <![CDATA[ */ accConf = {"events":{"endpointPaths":["/a8f4d8cd95e164917035b64b867a45dd"]}}; /* ]]> */</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona WWW z powitaniem i zmianą koloru tła</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #welcomeMessage {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        #changeBackgroundButton {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcomeMessage"></div>
+    <button id="changeBackgroundButton">Zmień kolor tła</button>
+
+    <script>
+        // Funkcja zmieniająca powitanie w zależności od godziny
+        function updateGreeting() {
+            const hours = new Date().getHours();
+            const greetingMessage = document.getElementById("welcomeMessage");
+            
+            if (hours < 12) {
+                greetingMessage.textContent = "Dzień dobry!";
+            } else if (hours >= 12 && hours < 18) {
+                greetingMessage.textContent = "Witaj po południu!";
+            } else {
+                greetingMessage.textContent = "Dobry wieczór!";
+            }
+        }
+
+        // Funkcja zmieniająca kolor tła
+        function changeBackgroundColor() {
+            const colors = ["#FFDDC1", "#D4E157", "#81C784", "#FFEB3B", "#FF5722"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        // Wywołanie funkcji przy załadowaniu strony
+        window.onload = function() {
+            updateGreeting();
+
+            const changeBackgroundButton = document.getElementById("changeBackgroundButton");
+            changeBackgroundButton.addEventListener("click", changeBackgroundColor);
+        };
+    </script>
+</head>
+<body>
+    
+ 
+	<title>Strona Domowa</title>
+
+	<style>
+    body {
+      background-color: pink;
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+
+    h2, h3 {
+      color: blue;
+      font-style: italic;
+      text-align: center;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona WWW z powitaniem i zmianą koloru tła</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #welcomeMessage {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        #changeBackgroundButton {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   
+  <h2>Strona Domowa</h2>
+  <hr>
+
+  <h3>Dane</h3>
+
+  <table style="border:none;">
+    <tr>
+      <td style="border:none;">
+        <span style="color:red;">Imię i nazwisko:</span> Wiktoria Nawrocka<br>
+        <span style="color:red;">Zawód:</span> Student<br>
+        <span style="color:red;">Miejsce zamieszkania:</span> Płock
+      </td>
+      <td style="border:none;">
+        <img src="obrazek.png" alt="obrazek" width="250" height="250">
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Plan</h3>
+
+  <table>
+    <tr>
+      <th>Poniedziałek</th>
+      <th>Wtorek</th>
+      <th>Środa</th>
+      <th>Czwartek</th>
+      <th>Piątek</th>
+      <th>Sobota</th>
+      <th>Niedziela</th>
+    </tr>
+    <tr>
+      <td colspan="5" style="text-align:center;">
+        ZAJĘCIA<br>
+        8<sup>00</sup>–18<sup>00</sup>
+      </td>
+      <td>WOLNE</td>
+      <td>WOLNE</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3>Zainteresowania</h3>
+
+  <table style="border:none;">
+    <tr>
+      <td style="border:none;">
+        <ol>
+          <li>Gotowanie</li>
+          <li>Pieczenie</li>
+          <li>Zakupy</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  
+   <h3>Formularz</h3> 
+
+<table style="border:none;">
+  <tr>
+    <td style="border:none;">
+      <form>
+        <p>
+          <label for="imie" style="color:red;">Imię:</label>
+          <input type="text" id="imie" name="Imię">
+        </p>
+
+        <p>
+          <label for="nazwisko" style="color:red;">Nazwisko:</label>
+          <input type="text" id="nazwisko" name="Nazwisko">
+        </p>
+
+	<p>
+          <label for="email" style="color:red;">Email:</label>
+          <input type="text" id="email" name="Email">
+	</p>
+
+	<p>
+          <label for="haslo" style="color:red;">Hasło:</label>
+          <input type="text" id="haslo" name="Hasło">
+	</p>
+
+        <p>
+          <label style="color:red;">Płeć:</label>
+          <input type="radio" id="plec_k" name="Płeć" value="Kobieta">
+          <label for="plec_k">K</label>
+
+          <input type="radio" id="plec_m" name="Płeć" value="Mężczyzna">
+          <label for="plec_m">M</label>
+        </p>
+
+        <p>
+          <label style="color:red;">Języki:</label>
+
+          <input type="checkbox" id="pl" name="Polski" value="Polski">
+          <label for="pl">Polski</label>
+
+          <input type="checkbox" id="ang" name="Angielski" value="Angielski">
+          <label for="ang">Angielski</label>
+
+          <input type="checkbox" id="niem" name="Niemiecki" value="Niemiecki">
+          <label for="niem">Niemiecki</label>
+        </p>
+
+        <p>
+          <label for="poziom" style="color:red;">Poziom umiejętności:</label><br>
+          <select id="poziom" name="Poziom umiejętnosci" multiple size="4">
+            <option selected>Początkujący</option>
+            <option>Średnio zaawansowany</option>
+            <option>Zaawansowany</option>
+            <option>Ekspert</option>
+          </select>
+        </p>
+
+	<p>
+	<label for="miejsce" style="color:red;">Miejsce zamieszkania:</label><br>
+	<select id="miejsce" name="Miejsce zamieszkania:">
+    		<option>Miasto</option>
+    		<option>Miasteczko</option>
+    		<option>Wieś</option>
+    		<option>Przedmieścia</option>
+	</select>
+	</p>
+
+        <p style="color:#E330C7;">
+          <label for="uwagi" style="color:red;">Uwagi:</label><br>
+          <textarea id="uwagi" name="Uwagi" cols="30" rows="6">Wpisz coś</textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Wyślij">
+          <input type="reset" value="Wyczyść">
+        </p>
+
+      </form>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+	<h3>Dzisiejsza data</h3>
+
+	<p style="text-align:center; font-size:18px; color:#E330C7;">
+	  Dzisiaj jest: <span id="data"></span>
+	</p>
+	<script>
+		let d = new Date() ;
+		document.getElementById("data").innerText = d.toLocaleDateString();
+	</script>
+
+
+      </td>
+    </tr>
+  </table>
+  
+  <hr>
+
+</body>
+</html>
